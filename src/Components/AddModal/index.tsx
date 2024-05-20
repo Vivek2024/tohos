@@ -6,8 +6,8 @@ import { TaskListContext } from "../../Contexts/taskListContext";
 import {  TaskProps, TaskListType } from "../../Contexts/taskType";
 import { CategoriesContext } from "../../Contexts/categoriesContext";
 import { CategorieContextType } from "../../Contexts/categoriesType";
-import { ActionMeta, InputActionMeta } from "react-select";
-import Select from "react-select/dist/declarations/src/Select";
+// import { ActionMeta, InputActionMeta } from "react-select";
+// import Select from "react-select/dist/declarations/src/Select";
 
 
 const AddModal:React.FC =()=>{
@@ -17,7 +17,7 @@ const AddModal:React.FC =()=>{
 
 
     const [taskName, setTaskName ]= useState("");
-    const [taskCat, setTaskCat] = useState(categList.findIndex((cat)=>cat.name == "None"));
+    const [taskCat, setTaskCat] = useState(categList.findIndex((cat)=>cat.name === "None"));
 
     function handleTyping(event: React.ChangeEvent<HTMLInputElement>){
         setTaskName(event.target.value);
