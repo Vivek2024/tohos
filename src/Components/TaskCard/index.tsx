@@ -44,7 +44,7 @@ const TaskCard: React.FC<TaskCardProps> =({id, name,list, color, done})=>{
                 </S.ListBelong>
             </S.Description>
             
-            <S.Icon src={Edit}/><S.Icon src={Erase} onClick={handleDelete}/>
+            <S.Icon src={Erase} onClick={handleDelete}/>
         </S.Container>
     );
 };
